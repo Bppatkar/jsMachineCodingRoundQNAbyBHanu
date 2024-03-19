@@ -75,9 +75,9 @@ console.log(reverseNumber(1234)); */
 //! write a js function that checks whether a passed string is palindrome or not
 /* function strPalChecker(str) {
   if (str === str.split("").reverse().join("")) {
-    console.log("palindrome");
+   return "palindrome";
   } else {
-    console.log(" not palindorme");
+    return "not palindorme";
   }
 }
 strPalChecker("poop");
