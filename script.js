@@ -1,5 +1,5 @@
 /* //Js Machine Coding Round Question By //!@BhanuPratap
-//! reverse string
+//! write a function to reverse a string
 
 const str = "bhanu pratap is my name";
 // const reverseStr = str.split(" ").reverse().join(" ");
@@ -18,6 +18,16 @@ const savedStr2 = str2
   .reverse()
   .join(" ");
 console.log(savedStr2); */
+
+/* function reverseStr(str) {
+  let reverse = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverse += str[i];
+  }
+  return reverse;
+}
+console.log(reverseStr("bhanu suno"));
+ */
 // _____________________________________________________________________
 
 /* //!how to check if an object is array or not
@@ -77,7 +87,7 @@ console.log(reverseNumber(1234)); */
   if (str === str.split("").reverse().join("")) {
    return "palindrome";
   } else {
-    return "not palindorme";
+    return " not palindorme";
   }
 }
 strPalChecker("poop");
@@ -299,7 +309,7 @@ ShufflingArr([1, 2, 3, 4, 5, 6, 7]); */
 }
 
 console.log(union([1, 2, 3], [100, 2, 1, 10])); */
-// _________________________________________________________________________________________________________
+// _____________________________________________________
 //! write a function that returns the longest word in the sentence.
 /* function longestWord(sentence) {
   const words = sentence.split(" ");
@@ -349,3 +359,69 @@ console.l og(checkDuplicate([1, 2, 2, 3, 4, 5, 3, 4, 5, 6, 1, 7, 8, 5, 6]));*/
 console.log(checkAnagram("tringle", "integrl")); // Output: true
 console.log(checkAnagram("listen", "silent")); // Output: true
 console.log(checkAnagram("hello", "world")); // Output: false */
+
+//! write a function that returns the number of vowels in a string.
+/* 
+function retVowel(str) {
+  const vowels = ["a", "e", "i", "o", "u"];
+  let count = 0;
+  debugger;
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(retVowel("bhanu pratap is my name")); */
+
+//! write a function to find the largest number in an array.
+/* function largestNumberFinder(arr) {
+  let largest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+}
+console.log(
+  largestNumberFinder([
+    5453, 4, 56435, 634, 243, 52345, 2452, 352, 435, 23453, 43453, 453, 45, 3,
+  ])
+);
+console.log(largestNumberFinder([1, 2, 3, 4, 5, 6, 7, 8, 9])); */
+
+//! write a function to check if given number is prime or not...?
+// prime number is only divisible by 1 or self
+/* function checkPrime(num) {
+  if (num <= 1) return false;
+  if (num % 2 === 0) return num === 2;
+  for (let i = 3; i * i <= num; i += 2) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+console.log(checkPrime(5)); */
+
+//! write a function to calculate the factorial of a number ?
+/* function factorialCheck(num) {
+  if (num < 0) return "Factorial not defined for negative numbers";
+  let count = 1;
+  for (let i = 2; i <= num; i++) {
+    count *= i;
+  }
+  return count;
+}
+console.log(factorialCheck(5)); */
+
+//! write a program to remove all whitespace characters from a string.
+function removingWhiteSpace(str) {
+  return str.replace(/\s+/g, "");
+}
+console.log(removingWhiteSpace("   bhan  u  "));
+
+// example
+var str = "  A B  C   D EF ";
+console.log(str.replace(/\s/g, "#")); // ##A#B##C###D#EF#
+console.log(str.replace(/\s+/g, "#")); // #A#B#C#D#EF#
