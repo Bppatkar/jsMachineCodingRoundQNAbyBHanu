@@ -276,7 +276,7 @@ freq([
 //! write a js program to shuffle an array
 //  Shuffling an array means randomly rearranging its elements.
 
-function ShufflingArr(arr) {
+/* function ShufflingArr(arr) {
   let suffleAra = arr.length;
   while (suffleAra > 0) {
     suffleAra--;
@@ -288,14 +288,64 @@ function ShufflingArr(arr) {
   return arr;
 }
 
-ShufflingArr([1, 2, 3, 4, 5, 6, 7]);
+ShufflingArr([1, 2, 3, 4, 5, 6, 7]); */
 
 //! write a js program to compute the union of two arrays sample data:
 // console.log(union([1,2,3],[100,2,1,10]))
 // [1,2,3,10,100]
 
-function union(arr1, arr2) {
+/* function union(arr1, arr2) {
   return [...new Set(arr1.concat(arr2))];
 }
 
-console.log(union([1, 2, 3], [100, 2, 1, 10]));
+console.log(union([1, 2, 3], [100, 2, 1, 10])); */
+// _________________________________________________________________________________________________________
+//! write a function that returns the longest word in the sentence.
+/* function longestWord(sentence) {
+  const words = sentence.split(" ");
+  let longWord = "";
+
+  // now we use for of loop to iterate each words
+  for (let word of words) {
+    if (word.length > longWord.length) {
+      longWord = word;
+    }
+  }
+  return longWord;
+}
+console.log(
+  longestWord(
+    "kyu kya tum sach me thiruvananthapuram ja kar javascript seekh rahe ho "
+  )
+); */
+
+//! write a function that remove duplicate elements from an array.
+// function checkDuplicate(arr) {
+//   return [...new Set(arr)];
+// }
+
+/* function checkDuplicate(arr) {
+  const unique = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (unique.indexOf(arr[i]) === -1) {
+      unique.push(arr[i]);
+    }
+  }
+  return unique;
+}
+console.l og(checkDuplicate([1, 2, 2, 3, 4, 5, 3, 4, 5, 6, 1, 7, 8, 5, 6]));*/
+
+//! write a function that checks whether two strings are anagrams or not..?
+// an anagram is word formed by rearranging the letters of other word. for example listen=> silent, tringle-> integral
+/* function checkAnagram(str1, str2) {
+  // Convert strings to arrays and sort them
+  let arr1 = str1.split("").sort();
+  let arr2 = str2.split("").sort();
+
+  // Check if the sorted arrays are equal
+  return arr1.join("") === arr2.join("");
+}
+
+console.log(checkAnagram("tringle", "integrl")); // Output: true
+console.log(checkAnagram("listen", "silent")); // Output: true
+console.log(checkAnagram("hello", "world")); // Output: false */
