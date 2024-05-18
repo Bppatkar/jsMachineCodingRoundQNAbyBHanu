@@ -86,7 +86,7 @@ const savedStr2 = str2
   .map((e) => e.split("").reverse().join(""))
   .reverse()
   .join(" ");
-console.log(savedStr2); */
+console.log(savedStr2); 
 _____________________________________________________
  function reverseStr(str) {
   let reverse = "";
@@ -106,7 +106,7 @@ const checkArray = (e) => {
   return Array.isArray(e);
 };
 console.log(checkArray([]));
-console.log(checkArray({})); */
+console.log(checkArray({})); 
 ```
 
 ### How to empty an array in js and do not reset it to a new array, and do not loop thorugh to pop each value
