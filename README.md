@@ -99,7 +99,7 @@ console.log(reverseStr("bhanu suno"));
  
 ```
 
-## check if an object is array or not
+## Check if an Object is an Array
 
 ```javascript
 const checkArray = (e) => {
@@ -110,12 +110,19 @@ console.log(checkArray({}));
 ```
 
 ## Empty an Array
+
+
 ### How to empty an array in js and do not reset it to a new array, and do not loop thorugh to pop each value
+
+
 ```javascript
 const arrray = [1, 2, 3, 4, 5, 6];
 console.log((arrray.length = 0)); 
 ```
-### How would you check if a number is an integer..?
+
+## Check if a Number is an Integer
+
+
 ```javascript
 // Number.isInteger(1);
 
@@ -127,7 +134,9 @@ if (a % 1 === 0) {
 }
 
 ``` 
-### Duplicate the array like
+### Duplicate an Array
+
+
 ```javascript
 //  [1,2,3,4,5] ==> [1,2,3,4,5,1,2,3,4,5] 5 k bad again repeating
 
@@ -138,7 +147,9 @@ console.log(duplicateArray([1, 2, 3, 4, 5]));
  ```
 
 # Function question start
-### Write a function that reverse a number
+
+
+## Reverse a Number
 
 ```Javascript
 function reverseNumber(e) {
@@ -161,7 +172,9 @@ console.log(reverseNumber(1234));
 ```
 _____________________________________________________
 
-### Write a js function that checks whether a passed string is palindrome or not
+## Check if a String is a Palindrome
+
+
 ```Javascipt
 function strPalChecker(str) {
   if (str === str.split("").reverse().join("")) {
@@ -175,7 +188,9 @@ strPalChecker("pool");
 ```
 _____________________________________________________
 
-### Write a js function that returns a passed string with letters in alphabetical order
+## Alphabetical Order
+
+
 ```Javascript
  function alphabeticalChecker(str) {
   return str.split("").sort();
@@ -185,7 +200,9 @@ console.log(alphabeticalChecker("anurag"));
 console.log(alphabeticalChecker("pratap"));
  ```
 
-### Write a js function that accepts a string as a parameter and converts the first letter of each word of the string in upper case
+## Capitalize First Letter of Each Word
+
+
 ```Javascipt
  function captilizeWord(str) {
   return str
@@ -207,8 +224,12 @@ console.log(upperCaseConverter("bhanu"));
 console.log(upperCaseConverter("pratap")); 
 ```
 
-###  Write a js function which accepts an argument and returns the type
+## Get Type of Argument
+
+
 //*Note:- There are six possible values that typeof returns: object,boolean, function, string, number, and undefined
+
+
 ```Javascipt
 function returnType(e) {
   return typeof e;
@@ -222,8 +243,12 @@ console.log(returnType(undefined));
 console.log(returnType(function () {})); 
 ```
 
-### write a js functino to get the number of occurrences of each letter in specified string
+## Count Letter Occurrences
+
+
 // it means which character comes how many times
+
+
 ```Javascipt
  function occurrenceChar(str) {
   let occ = {};
@@ -239,7 +264,9 @@ console.log(returnType(function () {}));
 }
 ```
 
-### same solution using map method
+## Array Sum
+
+
 ```Javascipt
 function occurrenceChar(str) {
   let occ = {};
@@ -251,7 +278,11 @@ console.log(occurrenceChar("bhanu Pratap"));
 ```
 
 # Loop
-### loop an array and add all members of it
+
+
+## Sum Non-String Members
+
+
 ```Javascipt
  const arr = [1, 2, 3, 4, 5];
  let sum = 0;
@@ -268,7 +299,6 @@ arr.forEach(function (i) {
 console.log(sum);
 ```
 
-### In an array of numbers and strings, only add those members which are not strings
 ```Javascipt
 let arr = ["hehehe", 123, "bhanu", 5543, "ais", 8345, "drg", 4, 456, 234, "as"];
 let sum = 0;
@@ -280,7 +310,7 @@ arr.forEach(function (e) {
 console.log(sum); 
 ```
 
-### Loop an array of objects and remove all objects which don't have gender's value male
+## Loop an array of objects and remove all objects which don't have gender's value male
 ```Javascipt
  let people = [
   { name: "Alice", gender: "female" },
@@ -315,7 +345,10 @@ console.log(people);
 ```
 
 # Array
-### write a js function to clone an array
+
+##Clone an Array
+
+
 ```Javascipt
 function clonedArr(arr) {
   return [...arr];
@@ -338,8 +371,12 @@ console.log(clonedArr([1, 2, 3, 4, 5]));
 console.log(clonedArr([1, 2, 3, 4, 5, 6])); 
 ```
 
-### write a js function to get the first element of an array. passing a parameter 'n' will return  the first 'n' elements of the array.
+## Get First Elements of Array
+
+
 ##### it means if ([1,2,3,4,5]) ye array h to first element print ho pr ([1,2,3,4,5],3) aise paramenter de diya jaye to first 3 element print ho ([1,2,3,4,5],2) h to 2 first 2 element print ho
+
+
 ```Javascipt
 
 function firstElement(e, n = 1) {
@@ -355,7 +392,8 @@ function firstElement(e, n = 1) {
 console.log(firstElement([2, 23, 24, 6, 7], 15));
  ```
 
-### write a js function to get the last element of an array. passing a parameter 'n' will return the last 'n' element of the array.
+## Get Last Elements of Array
+
 
 ```Javascipt
  function lastElement(e, n = 1) {
@@ -371,7 +409,8 @@ console.log(firstElement([2, 23, 24, 6, 7], 15));
 console.log(lastElement([2, 23, 24, 6, 7], 3));
  ```
 
-### write a js program to find the most frequent item of an array.
+## Most Frequent Item in Array
+
 // menas konsa banda sbse jyada bar aaya h
 
 ```Javascipt
@@ -391,7 +430,9 @@ freq([
 ]); 
 ```
 
-### write a js program to shuffle an array
+## Shuffle an Array
+
+
 //  Shuffling an array means randomly rearranging its elements.
 
 ```Javascipt
@@ -410,7 +451,9 @@ function ShufflingArr(arr) {
 ShufflingArr([1, 2, 3, 4, 5, 6, 7]); 
 ```
 
-### write a js program to compute the union of two arrays sample data:
+##Union of Two Arrays
+
+
  ```Javascipt
  console.log(union([1,2,3],[100,2,1,10]))
  [1,2,3,10,100]
@@ -423,7 +466,9 @@ ShufflingArr([1, 2, 3, 4, 5, 6, 7]);
 console.log(union([1, 2, 3], [100, 2, 1, 10])); 
 ```
 
-### Write a function that returns the longest word in the sentence.
+## Longest Word in Sentence
+
+
 ```Javascipt
  function longestWord(sentence) {
   const words = sentence.split(" ");
@@ -444,7 +489,9 @@ console.log(
 ); 
 ```
 
-### Write a function that remove duplicate elements from an array.
+## Remove Duplicate Elements
+
+
 ```Javascipt
 function checkDuplicate(arr) {
    return [...new Set(arr)];
@@ -460,11 +507,15 @@ function checkDuplicate(arr) {
   }
   return unique;
 }
-console.l og(checkDuplicate([1, 2, 2, 3, 4, 5, 3, 4, 5, 6, 1, 7, 8, 5, 6]));
+console.log(checkDuplicate([1, 2, 2, 3, 4, 5, 3, 4, 5, 6, 1, 7, 8, 5, 6]));
 ```
 
-### Write a function that checks whether two strings are anagrams or not..?
+## Check if Strings are Anagrams
+
+
 #### an anagram is word formed by rearranging the letters of other word. for example listen=> silent, tringle-> integral
+
+
 ```Javascipt
  function checkAnagram(str1, str2) {
   // Convert strings to arrays and sort them
@@ -480,7 +531,9 @@ console.log(checkAnagram("listen", "silent")); // Output: true
 console.log(checkAnagram("hello", "world")); // Output: false 
 ```
 
-### Write a function that returns the number of vowels in a string.
+## Count Vowels in String
+
+
 ```Javascipt
 function retVowel(str) {
   const vowels = ["a", "e", "i", "o", "u"];
@@ -496,7 +549,9 @@ function retVowel(str) {
 console.log(retVowel("bhanu pratap is my name")); 
 ```
 
-### Write a function to find the largest number in an array.
+## Largest Number in Array
+
+
 ```Javascipt
 function largestNumberFinder(arr) {
   let largest = arr[0];
@@ -515,7 +570,9 @@ console.log(
 console.log(largestNumberFinder([1, 2, 3, 4, 5, 6, 7, 8, 9])); 
 ```
 
-### Write a function to check if given number is prime or not...?
+## Check if Number is Prime
+
+
 // prime number is only divisible by 1 or self
 ```Javascipt
 
@@ -530,7 +587,9 @@ console.log(largestNumberFinder([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 console.log(checkPrime(5)); 
 ```
 
-### write a function to calculate the factorial of a number ?
+## Calculate Factorial
+
+
 ```Javascipt
 function factorialCheck(num) {
   if (num < 0) return "Factorial not defined for negative numbers";
@@ -543,7 +602,8 @@ function factorialCheck(num) {
 console.log(factorialCheck(5)); 
 ```
 
-### write a program to remove all whitespace characters from a string.
+## Remove Whitespace from String
+
 ```Javascipt
 function removingWhiteSpace(str) {
   return str.replace(/\s+/g, "");
