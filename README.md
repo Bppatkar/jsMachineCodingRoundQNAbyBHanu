@@ -1,5 +1,5 @@
 
-# Js Machine Coding Round Question By //!@BhanuPratap
+# Js Machine Coding Round Question By ##Bhanu Pratap Patkar
 
 # JavaScript Coding Challenges
 Welcome to my JavaScript Coding Challenges repository! Here you'll find a collection of various JavaScript functions and algorithms designed to solve common programming problems. Each function is self-contained and demonstrates different aspects of JavaScript programming.
@@ -192,7 +192,7 @@ _____________________________________________________
 
 
 ```Javascript
- function alphabeticalChecker(str) {
+function alphabeticalChecker(str) {
   return str.split("").sort();
 }
 
@@ -202,19 +202,19 @@ console.log(alphabeticalChecker("pratap"));
 
 ## Capitalize First Letter of Each Word
 
-
 ```Javascipt
- function captilizeWord(str) {
+function captilizeWord(str) {
   return str
     .split(" ")
     .map((e) => e.charAt(0).toUpperCase() + e.substring(1))
     .join(" ");
 }
 console.log(captilizeWord("bhanu tum kaise ho"));
-console.log(captilizeWord("sare jahan se aacha")); */
+console.log(captilizeWord("sare jahan se aacha")); 
 ```
 _____________________________________________________
 ```Javascipt
+
 function upperCaseConverter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
   // return str.charAt(0).toUpperCase() + str.substring(1);
@@ -222,6 +222,7 @@ function upperCaseConverter(str) {
 console.log(upperCaseConverter("anurag "));
 console.log(upperCaseConverter("bhanu"));
 console.log(upperCaseConverter("pratap")); 
+
 ```
 
 ## Get Type of Argument
@@ -241,6 +242,7 @@ console.log(returnType("bhanu"));
 console.log(returnType({}));
 console.log(returnType(undefined));
 console.log(returnType(function () {})); 
+
 ```
 
 ## Count Letter Occurrences
@@ -250,7 +252,7 @@ console.log(returnType(function () {}));
 
 
 ```Javascipt
- function occurrenceChar(str) {
+function occurrenceChar(str) {
   let occ = {};
   // return str.split("").forEach((e) => { //*forEach method does not return anything thats why we are using map method in second solution
   for (let e of str) {
@@ -284,15 +286,16 @@ console.log(occurrenceChar("bhanu Pratap"));
 
 
 ```Javascipt
- const arr = [1, 2, 3, 4, 5];
- let sum = 0;
+const arr = [1, 2, 3, 4, 5];
+let sum = 0;
 for (let i = 0; i < arr.length; i++) {
   sum += arr[i];
 } 
+
 ```
 
 ```Javascipt
- let sum = 0;
+let sum = 0;
 arr.forEach(function (i) {
   sum =+ sum + i; 
 });
@@ -332,7 +335,10 @@ people.forEach(function (e) {
 });
 console.log(count);
 ```
+
 #### removing non male person
+
+
 ```Javascipt
 for (let i = 1; i <= count; i++) {
   for (let j = 0; j < people.length; j++) {
@@ -365,7 +371,7 @@ function clonedArr(e) {
 console.log(clonedArr([1, 2, 3, 4, 5])); 
 ```
 ```Javascipt
- function clonedArr(e) {
+function clonedArr(e) {
   return e.map((elem) => elem);
 }
 console.log(clonedArr([1, 2, 3, 4, 5, 6])); 
@@ -414,12 +420,12 @@ console.log(lastElement([2, 23, 24, 6, 7], 3));
 // menas konsa banda sbse jyada bar aaya h
 
 ```Javascipt
- function freq(arr) {
-  let freq = {};
-  arr.forEach((elem) => {
-    if (freq.hasOwnProperty(elem)) freq[elem]++;
-    else freq[elem] = 1;
-  });
+function freq(arr) {
+ let freq = {};
+ arr.forEach((elem) => {
+if (freq.hasOwnProperty(elem)) freq[elem]++;
+else freq[elem] = 1;
+ });
   const ans = Object.keys(freq).reduce(function (acc, num) {
     return freq[acc] > freq[num] ? acc : num;
   });
@@ -459,7 +465,7 @@ ShufflingArr([1, 2, 3, 4, 5, 6, 7]);
  [1,2,3,10,100]
 ```
 ```Javascipt
- function union(arr1, arr2) {
+function union(arr1, arr2) {
   return [...new Set(arr1.concat(arr2))];
 }
 
@@ -470,7 +476,7 @@ console.log(union([1, 2, 3], [100, 2, 1, 10]));
 
 
 ```Javascipt
- function longestWord(sentence) {
+function longestWord(sentence) {
   const words = sentence.split(" ");
   let longWord = "";
 
@@ -498,7 +504,7 @@ function checkDuplicate(arr) {
  }
 ```
 ```Javascipt
- function checkDuplicate(arr) {
+function checkDuplicate(arr) {
   const unique = [];
   for (let i = 0; i < arr.length; i++) {
     if (unique.indexOf(arr[i]) === -1) {
@@ -517,7 +523,7 @@ console.log(checkDuplicate([1, 2, 2, 3, 4, 5, 3, 4, 5, 6, 1, 7, 8, 5, 6]));
 
 
 ```Javascipt
- function checkAnagram(str1, str2) {
+function checkAnagram(str1, str2) {
   // Convert strings to arrays and sort them
   let arr1 = str1.split("").sort();
   let arr2 = str2.split("").sort();
@@ -576,7 +582,7 @@ console.log(largestNumberFinder([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 // prime number is only divisible by 1 or self
 ```Javascipt
 
- function checkPrime(num) {
+function checkPrime(num) {
   if (num <= 1) return false;
   if (num % 2 === 0) return num === 2;
   for (let i = 3; i * i <= num; i += 2) {
