@@ -99,22 +99,22 @@ console.log(reverseStr("bhanu suno"));
  
 ```
 
-### How to check if an object is array or not
+## check if an object is array or not
 
 ```javascript
 const checkArray = (e) => {
   return Array.isArray(e);
 };
 console.log(checkArray([]));
-console.log(checkArray({})); */
+console.log(checkArray({})); 
 ```
 
+## Empty an Array
 ### How to empty an array in js and do not reset it to a new array, and do not loop thorugh to pop each value
 ```javascript
 const arrray = [1, 2, 3, 4, 5, 6];
-console.log((arrray.length = 0)); */
+console.log((arrray.length = 0)); 
 ```
-
 ### How would you check if a number is an integer..?
 ```javascript
 // Number.isInteger(1);
