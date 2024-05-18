@@ -1,5 +1,38 @@
 # Js Machine Coding Round Question By //!@BhanuPratap
 
+JavaScript Coding Challenges
+Welcome to my JavaScript Coding Challenges repository! Here you'll find a collection of various JavaScript functions and algorithms designed to solve common programming problems. Each function is self-contained and demonstrates different aspects of JavaScript programming.
+
+Table of Contents
+Reverse a String
+Check if an Object is an Array
+Empty an Array
+Check if a Number is an Integer
+Duplicate an Array
+Reverse a Number
+Check if a String is a Palindrome
+Alphabetical Order
+Capitalize First Letter of Each Word
+Get Type of Argument
+Count Letter Occurrences
+Array Sum
+Sum Non-String Members
+Filter Gender in Array of Objects
+Clone an Array
+Get First Elements of Array
+Get Last Elements of Array
+Most Frequent Item in Array
+Shuffle an Array
+Union of Two Arrays
+Longest Word in Sentence
+Remove Duplicate Elements
+Check if Strings are Anagrams
+Count Vowels in String
+Largest Number in Array
+Check if Number is Prime
+Calculate Factorial
+Remove Whitespace from String
+
 #!write a function to reverse a string
 
 const str = "bhanu pratap is my name";
