@@ -86,7 +86,7 @@ const savedStr2 = str2
   .map((e) => e.split("").reverse().join(""))
   .reverse()
   .join(" ");
-console.log(savedStr2); 
+console.log(savedStr2); */
 _____________________________________________________
  function reverseStr(str) {
   let reverse = "";
@@ -101,22 +101,22 @@ console.log(reverseStr("bhanu suno"));
 
 ### How to check if an object is array or not
 
- ```
+```javascript
 const checkArray = (e) => {
   return Array.isArray(e);
 };
 console.log(checkArray([]));
-console.log(checkArray({})); 
+console.log(checkArray({})); */
 ```
 
 ### How to empty an array in js and do not reset it to a new array, and do not loop thorugh to pop each value
-```
+```javascript
 const arrray = [1, 2, 3, 4, 5, 6];
 console.log((arrray.length = 0)); */
 ```
 
 ### How would you check if a number is an integer..?
-```
+```javascript
 // Number.isInteger(1);
 
 let a = 12.6;
@@ -127,3 +127,12 @@ if (a % 1 === 0) {
 }
 
 ``` 
+### Duplicate the array like
+```javascript
+//  [1,2,3,4,5] ==> [1,2,3,4,5,1,2,3,4,5] 5 k bad again repeating
+
+function duplicateArray(arr) {
+  return arr.concat(arr);
+}
+console.log(duplicateArray([1, 2, 3, 4, 5]));
+ ```
